@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// Position and BGC
+// -----------------------------------------------------------------------------
+
+.left-navi__top {
+  position: relative;
+  height: 113px;
+  background-color: $bright-grey;
+}
+
+.navi-body {
+  background-color: $cornflower-blue;
+  min-height: 100%;
+}
+
+// -----------------------------------------------------------------------------
+// Boxes
+// -----------------------------------------------------------------------------
+
+.navi-body__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 56px 0 34px;
+}
+
+.navi-body__item {
+  cursor: pointer;
+  flex-basis: 77px;
+  height: 81px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: all 0.3s ease-out;
+
+  &:last-child {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 95px;
+  }
+
+  &:hover {
+    .navi-body__link {
+      color: $biscay;
+    }
+	 .navi-body__square {
+		 background-color:$persimmon;
+		 box-shadow: 0px 10px 20px rgba(88, 92, 229, 0.25);;
+	 }
+	 .icon-navi {
+		 fill: $white;
+	 }
+  }
+}
+
+.navi-body__square {
+	transition: all 0.3s ease-out;
+  text-align: justify;
+  margin-bottom: 16px;
+  width: 50px;
+  height: 50px;
+  background-color: $white;
+  border-radius: 10px;
+}
+
+.icon-navi {
+	transition: all 0.3s ease-out;
+  width: 20px;
+  height: 20px;
+  fill: $polo-blue;
+
+  transform: translate(15px, 15px);
+}
+
+// -----------------------------------------------------------------------------
+// Typo
+// -----------------------------------------------------------------------------
+
+.navi-body__link {
+  transition: all 0.3s ease-out;
+  font-family: "Google Sans";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: $bermuda-gray;
+}

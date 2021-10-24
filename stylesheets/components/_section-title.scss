@@ -1,0 +1,43 @@
+
+.section-top {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section__box {
+	display: inline-flex;
+}
+
+.section-title {
+	margin-left: 12px;
+  font-family: "Gilroy";
+  font-size: 20px;
+  line-height: 23px;
+  font-weight: 600;
+  color: #3e3c50;
+  opacity: 0.8;
+}
+
+.section-top__icon {
+	width: 24px;
+	height: 24px;
+	fill: #b1b1b1;
+}
+
+.section-dots__icon {
+	width: 16px;
+	height: 4px;
+	fill: $cerulean-blue;
+}
+
+.section-dots {
+	width: 36px;
+	height: 36px;
+	background-color: $white;
+	border-radius: 10px;
+
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}

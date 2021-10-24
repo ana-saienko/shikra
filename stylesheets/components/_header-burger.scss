@@ -70,12 +70,15 @@ nav.menu__body
 
     display: block;
     position: absolute;
-    top: 20px;
-    right: 10px;
-    width: 30px;
-    height: 18px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 18px;
+    height: 12px;
     cursor: pointer;
     z-index: 5;
+
     span {
       transition: all 0.3s ease 0s;
       top: calc(50% - 1px);
@@ -89,7 +92,16 @@ nav.menu__body
       }
       &:last-child {
         top: auto;
+        width: 50%;
         bottom: 0px;
+      }
+    }
+
+    &:hover {
+      span {
+        &:last-child {
+          width: 100%;
+        }
       }
     }
     &.burger-active {

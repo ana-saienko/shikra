@@ -1,5 +1,3 @@
-// This file contains very basic styles.
-
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -14,36 +12,46 @@ html {
 // main styles for the layout
 
 body {
-	&.lock {
-		overflow: hidden;
-	}
-}
-
-.wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-
-.page {
-	flex: 1 1 auto;
+  &.lock {
+    overflow: hidden;
+  }
 }
 
 .container {
-	max-width: $maxWidthContainer + px;
-	margin: 0 auto;
-	@media (max-width: $md1+px) {
-		max-width: 970px;
-	}
-	@media (max-width: $md2+px) {
-		max-width: 750px;
-	}
-	@media (max-width: $md3+px) {
-		max-width: none;
-		padding: 0 10px;
-	}
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  min-height: 100%;
+  overflow: hidden;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
 }
 
+// -----------------------------------------------------------------------------
+// My settings for the main page
+// -----------------------------------------------------------------------------
 
+.page {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left-navi {
+  flex-basis: 131px;
+
+}
+
+.main-board {
+  flex: 1 1 auto;
+}
+
+.main-aside {
+	flex-basis: 397px;
+}

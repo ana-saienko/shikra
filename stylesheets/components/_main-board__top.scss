@@ -1,0 +1,102 @@
+.main-board__top {
+  height: 113px;
+  background-color: $cornflower-blue;
+  padding: 27px 31px 32px 44px;
+}
+
+.board-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.board-top__search {
+  display: inline-flex;
+  align-items: center;
+
+  position: relative;
+}
+
+// -----------------------------------------------------------------------------
+// SVG and button
+// -----------------------------------------------------------------------------
+
+.board-top__filter {
+  margin-left: 9px;
+  width: 52px;
+  height: 52px;
+  background-color: $carnation;
+  border-radius: 50%;
+  transition: all 0.3s ease-out;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: $white;
+    .board-top__filter-icon {
+      fill: $polo-blue;
+    }
+  }
+}
+
+.board-top__search-icon {
+  width: 19px;
+  height: 19px;
+  fill: $gray;
+}
+
+.board-top__filter-icon {
+  width: 24px;
+  height: 24px;
+  fill: $white;
+  transition: all 0.3s ease-out;
+}
+
+.board-top__button {
+  position: absolute;
+  top: 50%;
+  left: 13px;
+  transform: translateY(-50%);
+}
+
+// -----------------------------------------------------------------------------
+// Typo
+// -----------------------------------------------------------------------------
+
+.board-top__link {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 30px;
+  color: #000000;
+}
+
+// -----------------------------------------------------------------------------
+// Input
+// -----------------------------------------------------------------------------
+
+.board-top__input {
+	outline: none;
+  padding: 17px 17px 17px 47px;
+  background: $white;
+  box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.02);
+  border-radius: 26px;
+  width: 326px;
+  height: 52px;
+
+  font-family: "Google Sans";
+  font-style: 400;
+  font-size: 15px;
+  line-height: 127.7%;
+  color: #afafaf;
+
+  &::placeholder {
+    font-family: "Google Sans";
+    font-style: 400;
+    font-size: 15px;
+    line-height: 127.7%;
+    color: #afafaf;
+  }
+}

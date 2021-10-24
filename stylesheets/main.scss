@@ -20,9 +20,14 @@
 @import
   'layout/header',
   'layout/hero',
+  'layout/main-board__box',
+  'layout/main-board',
+  'layout/left-navi',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
+  'components/section-title',
+  'components/main-board__top',
   'components/header-burger';

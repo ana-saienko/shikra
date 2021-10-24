@@ -12,58 +12,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__menu">
+    <div class="container">
+      <div class="page">
+        <div class="left-navi">
+          <div class="left-navi__top">
             <div class="icon-menu">
               <span></span>
               <span></span>
               <span></span>
-              </div>
-              <nav class="menu__body">
-                <ul class="header__menu-list">
-                  <li class="header__menu-item">
-                    <a href="#">Try</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a class="header__menu-link" href="#about">Лодочные аксессуары</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Гребные винты</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Другое</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Запчасти</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Лодки ПВХ и аксессуары</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Лодочные моторы</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Мизизы(нержавеющие)</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Прицепы, аксессуары для прицепов</a>
-                  </li>
-                  <li class="header__menu-item">
-                    <a href="#">Смазки</a>
-                  </li>
-                </ul>
-              </nav>
+            </div>
           </div>
+          <nav class="left-navi__body navi-body">
+            <ul class="navi-body__list">
+              <li class="navi-body__item">
+                <div class="navi-body__square">
+                  <svg class="icon-navi">
+                    <use xlink:href="sprite.svg#house"></use>
+                  </svg>
+                </div>
+                <a href="#" class="navi-body__link">Dashboard</a>
+              </li>
+              <li class="navi-body__item">
+                <div class="navi-body__square">
+                  <svg class="icon-navi">
+                    <use xlink:href="sprite.svg#calendar"></use>
+                  </svg>
+                </div>
+                <a href="#" class="navi-body__link">Upcoming</a>
+              </li>
+              <li class="navi-body__item">
+                <div class="navi-body__square">
+                  <svg class="icon-navi">
+                    <use xlink:href="sprite.svg#compass"></use>
+                  </svg>
+                </div>
+                <a href="#" class="navi-body__link">Explore</a>
+              </li>
+              <li class="navi-body__item">
+                <div class="navi-body__square">
+                  <svg class="icon-navi">
+                    <use xlink:href="sprite.svg#person"></use>
+                  </svg>
+                </div>
+                <a href="#" class="navi-body__link">Profile</a>
+              </li>
+              <li class="navi-body__item">
+                <div class="navi-body__square">
+                  <svg class="icon-navi">
+                    <use xlink:href="sprite.svg#settings"></use>
+                  </svg>
+                </div>
+                <a href="#" class="navi-body__link">Settings</a>
+              </li>
+              <li class="navi-body__item">
+                <div class="navi-body__square">
+                  <svg class="icon-navi">
+                    <use xlink:href="sprite.svg#power"></use>
+                  </svg>
+                </div>
+                <a href="#" class="navi-body__link">Logout</a>
+              </li>
+            </ul>
+          </nav>
         </div>
+        <main class="main-board">
+          <div class="main-board__top board-top">
+            <a href="#" class="board-top__link">Shikra.</a>
+            <div class="board-top__search">
+              <button class="board-top__button" type="submit">
+                <svg class="board-top__search-icon">
+                  <use xlink:href="sprite.svg#search"></use>
+                </svg>
+              </button>
+              <input type="text" class="board-top__input" placeholder="Search">
+              <button class="board-top__filter">
+                <svg class="board-top__filter-icon">
+                  <use xlink:href="sprite.svg#tune"></use>
+                </svg>
+              </button>
+              
+            </div>
+          </div>
+          <div class="main-board__middle"></div>
+          <div class="main-board__box">
+            <div class="invite">
+              <div class="section-top">
+                <div class="section__box">
+                  <svg class="section-top__icon">
+                    <use xlink:href="sprite.svg#group-people"></use>
+                  </svg>
+                  <h3 class="section-title">Invite Friends</h3>
+                </div>
 
-      </header>
-
-      <main class="page">
-        <section id="about"></section>
-      </main>
-      <footer class="footer"></footer>
+                <div class="section-dots">
+                  <svg class="section-dots__icon">
+                    <use xlink:href="sprite.svg#more"></use>
+                  </svg>
+                </div>
+              </div>
+              
+            </div>
+            <div class="members"></div>
+          </div>
+        </main>
+        <aside class="main-aside">ghgh</aside>
+      </div>
     </div>
 
     <script src="js/script.js"></script>
