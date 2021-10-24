@@ -2,3 +2,55 @@
  * Basic typography style for copy text
  */
 
+ @font-face {
+	font-family: 'Gilroy';
+	src:url('../fonts/Gilroy-Regular.woff2') format('woff2'),
+		 url('../fonts/Gilroy-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src:url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+		 url('../fonts/Gilroy-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src:url('../fonts/Gilroy-Medium.woff2') format('woff2'),
+		 url('../fonts/Gilroy-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Google Sans';
+	src:url('../fonts/ProductSans-Regular.woff2') format('woff2'),
+		 url('../fonts/ProductSans-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Pro';
+	src:url('../fonts/SofiaPro-Regular.woff2') format('woff2'),
+		 url('../fonts/SofiaPro-Regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Sofia Pro';
+	src:url('../fonts/SofiaPro-Black.woff2') format('woff2'),
+		 url('../fonts/SofiaPro-Black.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+body {
+	font-family: 'Gilroy';
+	// font-weight: 600;
+}
