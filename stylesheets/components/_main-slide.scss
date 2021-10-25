@@ -1,0 +1,137 @@
+.main-slide__header {
+  margin: 55px 34px 60px 34px;
+}
+
+.main-slide__wrapper {
+  position: relative;
+  margin: 55px 0px 60px 34px;
+}
+
+// -----------------------------------------------------------------------------
+// Настройки табов (внешний вид)
+// -----------------------------------------------------------------------------
+
+.tabs-nav {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.tabs-nav__item {
+  cursor: pointer;
+  margin-bottom: 50px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 127.7%;
+  color: #353646;
+  opacity: 0.4;
+  transform: rotate(-90deg);
+}
+
+.tabs-nav__item.is-active {
+  color: #ff6647;
+  opacity: 1;
+}
+
+.tabs__content {
+  margin: 0px 0px 0px 70px;
+}
+
+.tab {
+  display: none;
+}
+.tab.is-active {
+  display: block;
+}
+
+.tab-2 {
+
+}
+
+// -----------------------------------------------------------------------------
+// Верстка содержимого табов
+// -----------------------------------------------------------------------------
+.slide-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.slide-content__item {
+  flex-basis: 293px;
+  overflow: hidden;
+  height: 100%;
+  height: 261px;
+
+  padding: 12px 12px 20px 12px;
+  background: #ffffff;
+  box-shadow: 0px 100px 80px rgba(153, 165, 236, 0.05),
+    0px 64.8148px 46.8519px rgba(153, 165, 236, 0.037963),
+    0px 38.5185px 25.4815px rgba(153, 165, 236, 0.0303704),
+    0px 20px 13px rgba(153, 165, 236, 0.025),
+    0px 8.14815px 6.51852px rgba(153, 165, 236, 0.0196296),
+    0px 1.85185px 3.14815px rgba(153, 165, 236, 0.012037);
+  border-radius: 25px;
+}
+
+.slide-content__img {
+  margin-bottom: 13px;
+  width: 268px;
+  height: 170px;
+  position: relative;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+}
+
+.slide-content__title {
+  margin-bottom: 7px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 15.7759px;
+  line-height: 127.7%;
+  color: #353646;
+}
+
+.slide-content__location {
+  display: inline-flex;
+  align-items: center;
+  span {
+    margin-left: 8px;
+    font-family: "Gilroy";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 127.7%;
+    color: #353646;
+    opacity: 0.4;
+  }
+}
+
+.slide-content__price {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 127.7%;
+  color: #34a59f;
+}
+
+.slide-content__svg {
+  width: 11px;
+  height: 14px;
+  fill: #ff6647;
+  opacity: 1;
+}
+
+.slide-content__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

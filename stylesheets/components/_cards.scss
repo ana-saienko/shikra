@@ -1,0 +1,148 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 38px 15px;
+}
+.cards__item-wrap {
+  width: 99px;
+  height: 124px;
+
+  border-radius: 14px;
+}
+
+// -----------------------------------------------------------------------------
+// Cards
+// -----------------------------------------------------------------------------
+
+.cards__item-wrap_1 {
+  background: #ecfaff;
+}
+.cards__item-wrap_2 {
+  background: #ffefbc;
+}
+.cards__item-wrap_3 {
+  background: #ffe2bf;
+}
+.cards__item-wrap_4 {
+  background: #eeecff;
+}
+.cards__item-wrap_5 {
+  background: #ffe8e8;
+}
+.cards__item-wrap_6 {
+  background: #ddffe9;
+}
+
+// -----------------------------------------------------------------------------
+// IMAGES
+// -----------------------------------------------------------------------------
+
+.cards__item-img {
+  width: 28px;
+  height: 28px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.cards__item-svg {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards__item-svg_1{
+	background: #B5D9E7;
+}
+
+.cards__item-svg_2{
+	background: #F0DB99;
+}
+
+.cards__item-svg_3{
+	background: #F3D0A6;
+}
+
+.cards__item-svg_4{
+	background: #E0DEFD;
+}
+
+.cards__item-svg_5{
+	background: #FCD7D7;
+}
+
+.cards__item-svg_6{
+	background: #B1F1C6;
+}
+
+.cards-svg {
+  width: 10px;
+  height: 10px;
+  fill: #ffffff;
+}
+
+// 
+
+.cards-svg_close {
+  transform: rotate(-45deg);
+}
+
+// -----------------------------------------------------------------------------
+// Positionning inside
+// -----------------------------------------------------------------------------
+
+.cards__item-profile {
+  position: relative;
+  padding: 12px 23px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards__item-border {
+  margin-bottom: 7px;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 4px 15px rgba(160, 230, 255, 0.2);
+  border-radius: 50%;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards__item-sign {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+// -----------------------------------------------------------------------------
+// Positionning inside
+// -----------------------------------------------------------------------------
+
+.cards__item-name {
+  font-family: "Gilroy";
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #010101;
+}

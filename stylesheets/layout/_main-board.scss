@@ -1,12 +1,12 @@
 .main-board {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-board__box {
-	flex-basis: 435px;
+  flex-basis: 435px;
 }
 
 .main-board__middle {
-	flex: 1 1 auto;
+  flex: 1 1 auto;
 }
