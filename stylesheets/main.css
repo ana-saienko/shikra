@@ -139,6 +139,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  background-color: #fcfcfc;
 }
 
 .main-aside {
@@ -146,6 +147,7 @@ body.lock {
       -ms-flex: 1 1 397px;
           flex: 1 1 397px;
   min-width: 0;
+  background-color: #fefdfa;
 }
 
 /**
@@ -352,7 +354,6 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background-color: #cecece;
 }
 
 .left-navi__top {
@@ -747,6 +748,19 @@ body.lock {
   color: #010101;
 }
 
+.main-aside__gallery {
+  max-width: 397px;
+  padding: 0 18px;
+}
+
+.gallery__grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+}
+
 .main-aside__slider {
   padding: 20px 18px;
 }
@@ -992,6 +1006,15 @@ body.lock {
   font-weight: 600;
   color: #3e3c50;
   opacity: 0.8;
+}
+
+.main-aside__gallery .section-title {
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #000000;
+  opacity: 1;
 }
 
 .section-top__icon {

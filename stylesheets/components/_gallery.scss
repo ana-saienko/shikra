@@ -1,0 +1,10 @@
+.main-aside__gallery {
+	max-width: 397px;
+	padding: 0 18px;
+}
+
+.gallery__grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 13px;
+}
