@@ -53,5 +53,7 @@ body {
 }
 
 .main-aside {
-	flex-basis: 397px;
+  flex: 1 1 397px;
+  min-width: 0;
+
 }

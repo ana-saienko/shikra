@@ -45,3 +45,14 @@ let tab = function () {
 
 
 tab();
+
+// -----------------------------------------------------------------------------
+// Swiper slider ASIDE
+// -----------------------------------------------------------------------------
+
+const swiper = new Swiper('.swiper', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+});

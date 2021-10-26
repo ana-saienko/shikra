@@ -142,8 +142,10 @@ body.lock {
 }
 
 .main-aside {
-  -ms-flex-preferred-size: 397px;
-      flex-basis: 397px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 397px;
+          flex: 1 1 397px;
+  min-width: 0;
 }
 
 /**
@@ -350,6 +352,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  background-color: #cecece;
 }
 
 .left-navi__top {
@@ -455,7 +458,7 @@ body.lock {
 .tabs-nav {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 13px;
 }
 
 .tabs-nav__item {
@@ -492,32 +495,29 @@ body.lock {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
+  overflow: auto;
 }
 
 .slide-content__item {
   -ms-flex-preferred-size: 293px;
       flex-basis: 293px;
-  overflow: hidden;
-  height: 100%;
-  height: 261px;
+}
+
+.slide-content__wrap {
   padding: 12px 12px 20px 12px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 100px 80px rgba(153, 165, 236, 0.05), 0px 64.8148px 46.8519px rgba(153, 165, 236, 0.037963), 0px 38.5185px 25.4815px rgba(153, 165, 236, 0.0303704), 0px 20px 13px rgba(153, 165, 236, 0.025), 0px 8.14815px 6.51852px rgba(153, 165, 236, 0.0196296), 0px 1.85185px 3.14815px rgba(153, 165, 236, 0.012037);
-          box-shadow: 0px 100px 80px rgba(153, 165, 236, 0.05), 0px 64.8148px 46.8519px rgba(153, 165, 236, 0.037963), 0px 38.5185px 25.4815px rgba(153, 165, 236, 0.0303704), 0px 20px 13px rgba(153, 165, 236, 0.025), 0px 8.14815px 6.51852px rgba(153, 165, 236, 0.0196296), 0px 1.85185px 3.14815px rgba(153, 165, 236, 0.012037);
+  background: #FFFFFF;
   border-radius: 25px;
 }
 
 .slide-content__img {
   margin-bottom: 13px;
-  width: 268px;
+  overflow: hidden;
   height: 170px;
+  border-radius: 20px;
   position: relative;
 }
 
@@ -527,8 +527,8 @@ body.lock {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slide-content__title {
@@ -745,6 +745,224 @@ body.lock {
   text-align: center;
   letter-spacing: 0.01em;
   color: #010101;
+}
+
+.main-aside__slider {
+  padding: 20px 18px;
+}
+
+.swiper {
+  width: 365px;
+  height: 630px;
+  margin-left: 0;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 13%;
+  width: 20px;
+  height: 20px;
+  background: rgba(196, 196, 196, 0.8);
+  border-radius: 50%;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 8px;
+  color: #fff;
+}
+
+.aside-slide__image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 39%;
+  border-radius: 10px;
+  margin-bottom: 27px;
+}
+
+.aside-slide__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aside-slide__label {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  z-index: 1;
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 26px;
+  color: #757575;
+  text-align: center;
+  width: 85px;
+  height: 26px;
+  padding: 3px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+  border-radius: 5px;
+}
+
+.aside-slide__svg {
+  width: 19px;
+  height: 16px;
+  fill: #3246d3;
+}
+
+.aside-slide__icon {
+  width: 32px;
+  height: 32px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 10px;
+}
+
+.aside-slide__icon:last-child {
+  margin-right: 0;
+}
+
+.aside-slide__icon-svg {
+  width: 11px;
+  height: 11px;
+  fill: #757575;
+}
+
+.aside-slide__tag-icon {
+  width: 22px;
+  height: 16px;
+  fill: #757575;
+}
+
+#bed {
+  stroke: #757575;
+}
+
+#building {
+  stroke: #757575;
+}
+
+.aside-slide__address {
+  margin-bottom: 25px;
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.aside-slide__author {
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #757575;
+}
+
+.aside-slide__price {
+  font-family: "Sofia Pro";
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 31px;
+  color: #3246d3;
+}
+
+.aside-slide__subtitle {
+  margin-left: 5px;
+  font-family: "Sofia Pro";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #757575;
+}
+
+.aside-slide__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 35px;
+}
+
+.aside-slide__middle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 27px;
+}
+
+.aside-slide__icons {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside-slide__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 33px;
+}
+
+.aside-slide__tag {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.aside-slide__map {
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  padding-bottom: 34%;
+}
+
+.aside-slide__map iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .section-top {
