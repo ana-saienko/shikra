@@ -41,6 +41,10 @@ body {
 .page {
   display: flex;
   min-height: 100vh;
+
+  @media (max-width:$md2+px){
+    flex-wrap: wrap;
+  }
 }
 
 .left-navi {
@@ -57,4 +61,8 @@ background-color: #fcfcfc;
   flex: 1 1 397px;
   min-width: 0;
 background-color: #fefdfa;
+
+@media (max-width:$md2+px){
+  flex: 1 1 auto;
+}
 }

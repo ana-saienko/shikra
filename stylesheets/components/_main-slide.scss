@@ -1,10 +1,10 @@
 .main-slide__header {
-  margin: 55px 34px 60px 34px;
+  margin: 50px 34px 60px 34px;
 }
 
 .main-slide__wrapper {
   position: relative;
-  margin: 55px 0px 60px 34px;
+  margin: 50px 0px 60px 34px;
 }
 
 // -----------------------------------------------------------------------------
@@ -36,6 +36,7 @@
 
 .tabs__content {
   margin: 0px 0px 0px 70px;
+  max-width: 827px;
 }
 
 .tab {
@@ -52,7 +53,7 @@
 // -----------------------------------------------------------------------------
 // Верстка содержимого табов
 // -----------------------------------------------------------------------------
-
+/*
 .slide-content{
   display: flex;
   align-items: center;
@@ -63,7 +64,7 @@
 .slide-content__item {
   flex-basis: 293px;
 }
-
+*/
 .slide-content__wrap {
   padding: 12px 12px 20px 12px;
   background: #FFFFFF;
@@ -129,4 +130,52 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+// -----------------------------------------------------------------------------
+// Верстка слайдера который в табе
+// -----------------------------------------------------------------------------
+
+.splide__arrow--prev {
+  left: auto;
+  right: 8%;
+}
+
+.splide__arrow {
+  top: -30%;
+  background: transparent;
+}
+
+.splide__slide {
+  width: 293px !important;
+  margin-right: 30px;
+}
+
+.splide__pagination__page {
+  display: none;
+}
+
+.splide__track {
+  @media (max-width:$md1+px){
+     max-width: 500px !important; 
+  }
+}
+
+.swiper-slide {
+
+  @media (max-width:$md1+px){
+    width: 250px !important;
+    overflow: hidden; 
+  }
+
+  @media (max-width:$md2+px){
+    width: 340px !important;
+  }
+
+}
+
+.swiper {
+  @media (max-width:$md2+px){
+    width: 100% !important;
+  }
 }

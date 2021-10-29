@@ -51,8 +51,37 @@ tab();
 // -----------------------------------------------------------------------------
 
 const swiper = new Swiper('.swiper', {
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 30,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
+      
 });
+
+// -----------------------------------------------------------------------------
+// Swiper slider CENTER
+// -----------------------------------------------------------------------------
+
+var splide = new Splide( '.splide', {
+    type     : 'loop',
+    perPage: 2
+  } );
+  
+  splide.mount();
+
+  var splideSec = new Splide( '.splide-sec', {
+    type     : 'loop',
+    perPage: 2
+  } );
+  
+  splideSec.mount();
+
+  var splideThird = new Splide( '.splide-third', {
+    type     : 'loop',
+    perPage: 2
+  } );
+  
+  splideThird.mount();

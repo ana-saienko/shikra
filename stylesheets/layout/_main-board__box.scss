@@ -2,6 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 38px;
+
+	@media (max-width:$md1+px){
+		 flex-direction: column; 
+	}
 }
 
 .invite {

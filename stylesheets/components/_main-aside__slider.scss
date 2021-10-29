@@ -19,6 +19,19 @@
   height: 20px;
   background: rgba(196, 196, 196, 0.8);
   border-radius: 50%;
+
+
+}
+
+.swiper-button-next {
+  @media (max-width:$md1+px){
+    left: 60%;
+    right: auto; 
+  }
+
+  @media (max-width:$md2+px){
+    left: 95%;
+  }
 }
 
 .swiper-button-next:after,
