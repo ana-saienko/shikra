@@ -2,12 +2,22 @@
   height: 113px;
   background-color: $cornflower-blue;
   padding: 27px 31px 32px 44px;
+
+  @media (max-width: $md3+px) {
+    padding: 15px 10px 15px 10px;
+  }
 }
 
 .board-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $md3+px) {
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+  }
 }
 
 .board-top__search {
@@ -71,6 +81,10 @@
   font-size: 26px;
   line-height: 30px;
   color: #000000;
+
+  @media (max-width:$md3+px){
+     font-size: 22px; 
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -78,7 +92,7 @@
 // -----------------------------------------------------------------------------
 
 .board-top__input {
-	outline: none;
+  outline: none;
   padding: 17px 17px 17px 47px;
   background: $white;
   box-shadow: 0px 24px 24px rgba(0, 0, 0, 0.02);
@@ -98,5 +112,14 @@
     font-size: 15px;
     line-height: 127.7%;
     color: #afafaf;
+  }
+
+  @media (max-width: $md2+px) {
+    width: 250px;
+    padding: 15px 15px 15px 44px;
+  }
+
+  @media (max-width: $md3+px) {
+    width: 180px;
   }
 }

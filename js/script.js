@@ -51,7 +51,7 @@ tab();
 // -----------------------------------------------------------------------------
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: "auto",
+    slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
     navigation: {
