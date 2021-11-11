@@ -1,10 +1,18 @@
 .main-slide__header {
   margin: 50px 34px 60px 34px;
+
+  @media (max-width:$md3+px){
+     margin: 35px 15px 40px 15px; 
+  }
 }
 
 .main-slide__wrapper {
   position: relative;
   margin: 50px 0px 60px 34px;
+
+  @media (max-width:$md3+px){
+    margin: 35px 0px 40px 15px; 
+ }
 }
 
 // -----------------------------------------------------------------------------
@@ -37,6 +45,10 @@
 .tabs__content {
   margin: 0px 0px 0px 70px;
   max-width: 827px;
+
+  @media (max-width:$md3+px){
+    max-width: 100%;
+  }
 }
 
 .tab {
@@ -143,6 +155,10 @@
 .splide__arrow {
   top: -30%;
   background: transparent;
+
+  @media (max-width:$md3+px){
+    top: -20%;
+  }
 }
 
 .splide__slide {
@@ -153,7 +169,6 @@
 .splide__pagination__page {
   display: none;
 }
-
 .splide__track {
   max-width: 845px !important;
   @media (max-width: $maxWidthContainer+px) {
@@ -161,7 +176,11 @@
   }
 
   @media (max-width: $md2+px) {
-    max-width: 515px !important;
+    max-width: 551px !important;
+  }
+
+  @media (max-width:$md3+px){
+    max-width: 300px !important;
   }
 }
 

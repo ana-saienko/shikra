@@ -49,6 +49,11 @@ body {
 
 .left-navi {
   flex-basis: 131px;
+
+  
+  @media (max-width: $md2+px) {
+    flex-basis: 95px;
+  }
 }
 
 .main-board {
