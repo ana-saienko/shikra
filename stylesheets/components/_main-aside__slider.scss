@@ -10,6 +10,14 @@
   width: 365px;
   height: 630px;
   margin-left: 0;
+
+  @media (max-width:$md3+px){
+    // width: 315px;
+  }
+
+  @media (max-width:$md4+px){
+     width: 290px; 
+  }
 }
 
 .swiper-button-next,

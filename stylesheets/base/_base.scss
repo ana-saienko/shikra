@@ -32,6 +32,10 @@ body {
     max-width: none;
     padding: 0 10px;
   }
+
+  @media (max-width:$md4+px){
+     padding: 0; 
+  }
 }
 
 // -----------------------------------------------------------------------------
@@ -53,6 +57,10 @@ body {
   
   @media (max-width: $md2+px) {
     flex-basis: 95px;
+  }
+
+  @media (max-width:$md4+px){
+    flex-basis: 100%;
   }
 }
 
