@@ -85,3 +85,44 @@ var splide = new Splide( '.splide', {
   } );
   
   splideThird.mount();
+
+
+// -----------------------------------------------------------------------------
+// chart js
+// -----------------------------------------------------------------------------
+const labels = [
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat',
+    'Sun',
+  ];
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'Registered',
+      backgroundColor: 'rgb(249,101,73)',
+      barThickness: 15,
+      data: [21, 15, 19, 12, 20, 29, 22],
+    }]
+  };
+
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    },
+  };
+
+const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );

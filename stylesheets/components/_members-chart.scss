@@ -1,0 +1,14 @@
+.members {
+	overflow: hidden;
+	margin-left: 10px;
+}
+
+.members-chart {
+
+	overflow: hidden;
+	max-width: 492px;
+
+	@media (max-width:$md3+px){
+		max-width: 410px;
+	}
+}
