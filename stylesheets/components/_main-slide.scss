@@ -11,7 +11,7 @@
   margin: 50px 0px 60px 34px;
 
   @media (max-width:$md3+px){
-    margin: 35px 0px 40px 15px; 
+    margin: 35px 0px 40px 0px; 
  }
 }
 
@@ -47,7 +47,7 @@
   max-width: 827px;
 
   @media (max-width:$md3+px){
-    max-width: 100%;
+    max-width: 85%;
   }
 }
 

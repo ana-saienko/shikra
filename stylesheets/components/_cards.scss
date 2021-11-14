@@ -5,6 +5,10 @@
   gap: 38px 15px;
 
   max-width: 330px;
+
+  @media (max-width:$md3+px){
+    gap: 15px 5px;
+  }
 }
 .cards__item-wrap {
   width: 99px;

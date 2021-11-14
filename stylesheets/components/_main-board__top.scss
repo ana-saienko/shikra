@@ -16,7 +16,6 @@
   @media (max-width: $md3+px) {
     flex-direction: column;
     align-items: start;
-    gap: 15px;
   }
 }
 
@@ -121,5 +120,9 @@
 
   @media (max-width: $md3+px) {
     width: 180px;
+  }
+
+  @media (max-width:$md4+px){
+    width: 110px;
   }
 }

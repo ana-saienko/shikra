@@ -11,6 +11,10 @@
 .invite {
 	flex-basis: 326px;
 	margin-left: 35px;
+
+	@media (max-width:$md3+px){
+		margin-left: 10px;
+	}
 }
 
 .members {

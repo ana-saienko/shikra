@@ -11,6 +11,10 @@
 .navi-body {
   background-color: $cornflower-blue;
   min-height: 100%;
+
+  @media (max-width:$md4+px){
+     display: none; 
+  }
 }
 
 // -----------------------------------------------------------------------------

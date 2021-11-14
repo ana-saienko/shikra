@@ -370,6 +370,12 @@ body.lock {
   margin-left: 35px;
 }
 
+@media (max-width: 767.98px) {
+  .invite {
+    margin-left: 10px;
+  }
+}
+
 .members {
   -ms-flex-preferred-size: 492px;
       flex-basis: 492px;
@@ -395,6 +401,12 @@ body.lock {
 .navi-body {
   background-color: #F6F7FB;
   min-height: 100%;
+}
+
+@media (max-width: 489.98px) {
+  .navi-body {
+    display: none;
+  }
 }
 
 .navi-body__list {
@@ -500,7 +512,7 @@ body.lock {
 
 @media (max-width: 767.98px) {
   .main-slide__wrapper {
-    margin: 35px 0px 40px 15px;
+    margin: 35px 0px 40px 0px;
   }
 }
 
@@ -535,7 +547,7 @@ body.lock {
 
 @media (max-width: 767.98px) {
   .tabs__content {
-    max-width: 100%;
+    max-width: 85%;
   }
 }
 
@@ -706,6 +718,12 @@ body.lock {
       grid-template-rows: auto;
   gap: 38px 15px;
   max-width: 330px;
+}
+
+@media (max-width: 767.98px) {
+  .cards {
+    gap: 15px 5px;
+  }
 }
 
 .cards__item-wrap {
@@ -1216,7 +1234,6 @@ body.lock {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    gap: 15px;
   }
 }
 
@@ -1351,6 +1368,12 @@ body.lock {
 @media (max-width: 767.98px) {
   .board-top__input {
     width: 180px;
+  }
+}
+
+@media (max-width: 489.98px) {
+  .board-top__input {
+    width: 110px;
   }
 }
 
