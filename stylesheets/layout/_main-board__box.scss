@@ -3,20 +3,14 @@
 	justify-content: space-between;
 	gap: 38px;
 
-	@media (max-width:$md1+px){
-		 flex-direction: column; 
-	}
 }
 
 .invite {
-	flex-basis: 326px;
-	margin-left: 35px;
+	flex-basis: 40%;
 
-	@media (max-width:$md3+px){
-		margin-left: 10px;
-	}
 }
 
 .members {
-	flex-basis: 492px;
+	flex-basis: 55%;
+	margin-right: 24px;
 }

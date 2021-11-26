@@ -19,9 +19,8 @@ nav.menu__body
     li
       a
 
-*/
 
-  // Верстка черного фона, над которым будет список в бургере
+   Верстка черного фона, над которым будет список в бургере
   .menu__body {
     position: fixed;
     top:0;
@@ -33,11 +32,7 @@ nav.menu__body
     overflow: auto;
   }
 
-  .menu__body.burger-active {
-    left: 0;
-  }
-
-  // плашка, под которую будут заезжать пункты меню (на ней находится бургер и лого)
+  плашка, под которую будут заезжать пункты меню (на ней находится бургер и лого)
 
   .menu__body::before {
     content: "";
@@ -49,6 +44,16 @@ nav.menu__body
     z-index: 2;
     background-color: #000;
   }
+*/
+
+
+
+  .menu__body.burger-active {
+    left: 0;
+    display: block;
+  }
+
+  // 
 
   // Верстка пунктов меню в бургере
 

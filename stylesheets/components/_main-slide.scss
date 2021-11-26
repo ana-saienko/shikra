@@ -1,14 +1,14 @@
 .main-slide__header {
-  margin: 50px 34px 60px 34px;
+  margin: 50px 34px 60px 0px;
 
   @media (max-width:$md3+px){
-     margin: 35px 15px 40px 15px; 
+     margin: 35px 15px 40px 0px; 
   }
 }
 
 .main-slide__wrapper {
   position: relative;
-  margin: 50px 0px 60px 34px;
+  margin: 50px 0px 60px 0px;
 
   @media (max-width:$md3+px){
     margin: 35px 0px 40px 0px; 
@@ -197,4 +197,34 @@
   @media (max-width:$md4+px){
     width: 290px !important;
   }
+}
+
+
+.splide__arrow--prev {
+
+  background-image: url('../../images/prev.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 24px;
+  width: 24px;
+  right: 6%;
+}
+
+.splide__arrow--prev svg {
+  font-size: 0;
+}
+
+.splide__arrow--next svg {
+  font-size: 0;
+}
+
+.splide__arrow--next {
+  background-image: url('../../images/next.svg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 24px;
+  width: 24px;
+  right: 2%;
 }

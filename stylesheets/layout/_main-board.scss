@@ -1,11 +1,10 @@
 .main-board {
-
+  box-shadow: -100px 0px 109px rgba(17, 42, 144, 0.07), -50.625px 0px 47.5172px rgba(17, 42, 144, 0.04725), -20px 0px 17.7125px rgba(17, 42, 144, 0.035), -4.375px 0px 6.30156px rgba(17, 42, 144, 0.02275);
 }
 
 .main-board__box {
-  flex-basis: 435px;
+  display: flex;
 }
 
 .main-board__middle {
-  flex: 1 1 auto;
 }
