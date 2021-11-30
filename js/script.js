@@ -67,21 +67,21 @@ const swiper = new Swiper('.swiper', {
 
 var splide = new Splide( '.splide', {
     type     : 'loop',
-    perPage: 2
+    perPage: 1
   } );
   
   splide.mount();
 
   var splideSec = new Splide( '.splide-sec', {
     type     : 'loop',
-    perPage: 2
+    perPage: 1
   } );
   
   splideSec.mount();
 
   var splideThird = new Splide( '.splide-third', {
     type     : 'loop',
-    perPage: 2
+    perPage: 1
   } );
   
   splideThird.mount();

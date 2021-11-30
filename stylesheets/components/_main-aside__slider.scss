@@ -7,12 +7,12 @@
 // -----------------------------------------------------------------------------
 
 .swiper {
-  // width: 365px;
+  max-width: 365px;
   height: 630px;
   margin-left: 0;
 
-  @media (max-width:$md1+px){
-    width: 365px;
+  @media (max-width:1374px){
+    width: 300px;
   }
 
   @media (max-width:$md3+px){
@@ -20,7 +20,7 @@
   }
 
   @media (max-width:$md4+px){
-     width: 290px; 
+     // width: 290px; 
   }
 }
 

@@ -2,7 +2,10 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 38px;
-
+@media (max-width:1125px){
+	  flex-wrap: wrap;
+	  justify-content: center;
+}
 }
 
 .invite {

@@ -46,6 +46,10 @@
   margin: 0px 0px 0px 70px;
   max-width: 827px;
 
+  @media (max-width:$md1+px){
+     max-width: 100%; 
+  }
+
   @media (max-width:$md3+px){
     max-width: 85%;
   }
@@ -147,11 +151,6 @@
 // Верстка слайдера который в табе
 // -----------------------------------------------------------------------------
 
-.splide__arrow--prev {
-  left: auto;
-  right: 8%;
-}
-
 .splide__arrow {
   top: -30%;
   background: transparent;
@@ -171,9 +170,14 @@
 }
 .splide__track {
   max-width: 845px !important;
+
   @media (max-width: $maxWidthContainer+px) {
-    max-width: 735px !important;
+    max-width: 865px !important;
   }
+
+  @media (max-width:1374px){
+    max-width: 555px !important; 
+ }
 
   @media (max-width: $md2+px) {
     max-width: 551px !important;
@@ -208,7 +212,8 @@
   background-size: contain;
   height: 24px;
   width: 24px;
-  right: 6%;
+  right: 10%;
+  left: auto;
 }
 
 .splide__arrow--prev svg {
@@ -226,5 +231,5 @@
   background-size: contain;
   height: 24px;
   width: 24px;
-  right: 2%;
+  right: 6%;
 }
