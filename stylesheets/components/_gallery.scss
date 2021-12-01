@@ -26,3 +26,21 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 }
+
+.gallery__grid-item{
+	height: 111px;
+	width: 111px;
+	border-radius: 10px;
+	overflow: hidden;
+
+	position: relative;
+
+	img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  object-fit: cover;
+	}
+}

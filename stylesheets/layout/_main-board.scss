@@ -1,5 +1,10 @@
 .main-board {
   box-shadow: -100px 0px 109px rgba(17, 42, 144, 0.07), -50.625px 0px 47.5172px rgba(17, 42, 144, 0.04725), -20px 0px 17.7125px rgba(17, 42, 144, 0.035), -4.375px 0px 6.30156px rgba(17, 42, 144, 0.02275);
+
+  @media (max-width:1024px){
+    flex-basis: 100%;
+  }
+
 }
 
 .main-board__box {
@@ -9,4 +14,8 @@
 
 .main-board__middle {
   padding-left: 45px;
+
+  @media (max-width:$md4+px){
+     padding-left: 15px; 
+  }
 }

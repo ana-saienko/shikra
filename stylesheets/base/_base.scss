@@ -41,6 +41,9 @@ body {
   @media (max-width: $md1+px) {
     display: flex;
   }
+  @media (max-width:1024px){
+    flex-wrap: wrap;
+  }
 }
 
 .left-navi {
@@ -75,6 +78,9 @@ body {
   @media (max-width:$md1+px){
      flex-basis: 35%; 
   }
+  @media (max-width:1024px){
+    flex-basis: 100%;
+  }
 }
 
 .main-aside__bg {
@@ -83,4 +89,18 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100%;
+
+  @media (max-width:1024px){
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+    padding: 50px 0 0;
+  
+  }
+
+  @media (max-width:$md3+px){
+    flex-direction: column;
+    align-items: center;
+  }
 }

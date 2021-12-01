@@ -67,21 +67,36 @@ const swiper = new Swiper('.swiper', {
 
 var splide = new Splide( '.splide', {
     type     : 'loop',
-    perPage: 1
+    perPage: 1,
+    breakpoints: {
+      1024: {
+        width: '310px'
+      },
+    }
   } );
   
   splide.mount();
 
   var splideSec = new Splide( '.splide-sec', {
     type     : 'loop',
-    perPage: 1
+    perPage: 1,
+    breakpoints: {
+      1024: {
+        width: '310px'
+      },
+    }
   } );
   
   splideSec.mount();
 
   var splideThird = new Splide( '.splide-third', {
     type     : 'loop',
-    perPage: 1
+    perPage: 1,
+    breakpoints: {
+      1024: {
+        width: '310px'
+      },
+    }
   } );
   
   splideThird.mount();

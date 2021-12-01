@@ -1,19 +1,37 @@
 .main-board__box {
-	display: flex;
-	justify-content: space-between;
-	gap: 38px;
-@media (max-width:1125px){
-	  flex-wrap: wrap;
-	  justify-content: center;
-}
+  display: flex;
+  justify-content: space-between;
+  gap: 38px;
+  @media (max-width: 1125px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: 1024px) {
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+    padding-right: 15px;
+  }
+
+  @media (max-width: $md3+px) {
+    flex-wrap: wrap;
+  }
 }
 
 .invite {
-	flex-basis: 40%;
-
+  flex-basis: 40%;
+  margin-right: 24px; 
+  margin-left: 10px;
+  @media (max-width: $md3 + px) {
+    flex-basis: 100%;
+  }
 }
 
 .members {
-	flex-basis: 55%;
-	margin-right: 24px;
+  flex-basis: 55%;
+  margin-right: 24px;
+
+  @media (max-width: $md3+px) {
+    flex-basis: 100%;
+  }
 }

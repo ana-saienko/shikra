@@ -9,6 +9,10 @@
   @media (max-width:$md3+px){
     gap: 15px 0px;
   }
+
+  @media (max-width:$md4+px){
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .cards__item-wrap {
   width: 99px;

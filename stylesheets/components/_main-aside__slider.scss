@@ -8,19 +8,19 @@
 
 .swiper {
   max-width: 365px;
-  height: 630px;
+  height: 550px;
   margin-left: 0;
 
   @media (max-width:1374px){
     width: 300px;
   }
 
-  @media (max-width:$md3+px){
-    // width: 315px;
+  @media (max-width:1024px){
+    width: 380px;
   }
 
   @media (max-width:$md4+px){
-     // width: 290px; 
+     width: 310px; 
   }
 }
 
@@ -71,6 +71,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  @media (max-width:$md1+px){
+    padding-bottom: 50%;
   }
 }
 
@@ -210,7 +214,8 @@
 
 .aside-slide__tag {
   display: inline-flex;
-  align-items: center;
+  align-items: baseline;
+  box-shadow: -4px 14px 24px rgba(0, 0, 0, 0.06);
 }
 
 // -----------------------------------------------------------------------------
