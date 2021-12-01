@@ -634,15 +634,18 @@ html {
 }
 
 .tabs-nav__item:before {
+  display: none;
+  content: url("../images/before-tab.png");
+  color: #ff6647;
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: 11px;
+  left: 7px;
   width: 30px;
   height: 120px;
-  background-image: url(../../images/before-tab.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-filter: drop-shadow(25px 0px 96px rgba(236, 24, 8, 0.12)) drop-shadow(5px 0px 15.6px rgba(236, 24, 8, 0.24));
+          filter: drop-shadow(25px 0px 96px rgba(236, 24, 8, 0.12)) drop-shadow(5px 0px 15.6px rgba(236, 24, 8, 0.24));
 }
 
 .tabs-nav__item.is-active {
