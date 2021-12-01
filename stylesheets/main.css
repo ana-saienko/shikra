@@ -631,6 +631,8 @@ html {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   position: relative;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .tabs-nav__item:before {
