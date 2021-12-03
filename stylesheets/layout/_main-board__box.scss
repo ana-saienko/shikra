@@ -35,3 +35,14 @@
     flex-basis: 100%;
   }
 }
+
+.main-board__middle,
+.menu__body,
+.navi-body,
+.main-board__box {
+  transition: all .3s ease-in-out;
+}
+.main-board__middle.middle-active,
+.main-board__box.middle-active {
+  padding-left: 180px;
+}

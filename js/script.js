@@ -3,6 +3,8 @@
 const iconMenu = document.querySelector('.icon-menu');
 const menuBody = document.querySelector('.menu__body');
 const menuLink = document.querySelector('.header__menu-item');
+const boardMiddle = document.querySelector('.main-board__middle');
+const boardMiddleBox = document.querySelector('.main-board__box');
 
 if (iconMenu) {
 	
@@ -10,6 +12,8 @@ if (iconMenu) {
 		document.body.classList.toggle('lock');
 		iconMenu.classList.toggle('burger-active');
 		menuBody.classList.toggle('burger-active');
+    boardMiddle.classList.toggle('middle-active');
+    boardMiddleBox.classList.toggle('middle-active');
 	});
 }
 

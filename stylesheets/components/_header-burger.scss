@@ -47,10 +47,10 @@ nav.menu__body
 */
 
 .menu__body.burger-active {
-  @media (max-width: $md1+px) {
+ 
     left: 0;
     display: block;
-  }
+  
 }
 
 //
@@ -99,7 +99,7 @@ nav.menu__body
     }
   }
 
-  @media (max-width: $md1+px) {
+  
     &.burger-active {
       span {
         transform: scale(0);
@@ -113,7 +113,7 @@ nav.menu__body
         }
       }
     }
-  }
+  
 }
 
 // --------------------------------------------------------------------------------
