@@ -8,7 +8,7 @@
 
 .main-slide__wrapper {
   position: relative;
-  margin: 50px 0px 60px 0px;
+  margin: 50px 0px 30px 0px;
 
   @media (max-width: $md3+px) {
     margin: 35px 0px 40px 0px;
@@ -201,6 +201,7 @@
 
 .splide__track {
   max-width: 845px !important;
+  padding-bottom: 30px;
 
   @media (max-width: $maxWidthContainer+px) {
     max-width: 865px !important;
