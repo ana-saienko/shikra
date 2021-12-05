@@ -869,7 +869,7 @@ __body,
 }
 
 .splide__arrow--prev {
-  background-image: url("../../images/prev.svg");
+  background-image: url("../images/prev.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -894,7 +894,7 @@ __body,
 }
 
 .splide__arrow--next {
-  background-image: url("../../images/next.svg");
+  background-image: url("../images/next.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
