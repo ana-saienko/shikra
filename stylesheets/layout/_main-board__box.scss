@@ -20,7 +20,7 @@
 
 .invite {
   flex-basis: 40%;
-  margin-right: 24px; 
+  margin-right: 24px;
   margin-left: 10px;
   @media (max-width: $md3 + px) {
     flex-basis: 100%;
@@ -34,13 +34,17 @@
   @media (max-width: $md3+px) {
     flex-basis: 100%;
   }
+
+  .section-top__icon {
+    transform: translateY(-4px);
+  }
 }
 
 .main-board__middle,
-.menu__body,
+__body,
 .navi-body,
 .main-board__box {
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .main-board__middle.middle-active,
 .main-board__box.middle-active {

@@ -46,10 +46,15 @@ nav.menu__body
   }
 */
 
+.menu__body {
+  position: relative;
+  left: -100%;
+}
+
 .menu__body.burger-active {
  
     left: 0;
-    display: block;
+   // display: block;
   
 }
 

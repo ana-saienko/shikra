@@ -460,12 +460,17 @@ html {
   }
 }
 
+.members .section-top__icon {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
 .main-board__middle,
-.menu__body,
+__body,
 .navi-body,
 .main-board__box {
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .main-board__middle.middle-active,
@@ -511,7 +516,6 @@ html {
 .navi-body {
   background-color: #F6F7FB;
   min-height: 100%;
-  display: none;
 }
 
 .navi-body__list {
@@ -1758,9 +1762,13 @@ nav.menu__body
     background-color: #000;
   }
 */
+.menu__body {
+  position: relative;
+  left: -100%;
+}
+
 .menu__body.burger-active {
   left: 0;
-  display: block;
 }
 
 .header__menu-list {
