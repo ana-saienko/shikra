@@ -54,7 +54,8 @@ tab();
 // Swiper slider ASIDE
 // -----------------------------------------------------------------------------
 
-const swiper = new Swiper('.swiper', {
+window.addEventListener('resize', function(event) {
+  const swiper = new Swiper('.swiper', {
     slidesPerView: 1,
     loop: true,
     spaceBetween: 30,
@@ -64,6 +65,9 @@ const swiper = new Swiper('.swiper', {
       },
       
 });
+}, true);
+
+
 
 // -----------------------------------------------------------------------------
 // Swiper slider CENTER
