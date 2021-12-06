@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   gap: 38px;
+  padding-bottom: 50px;
   @media (max-width: 1125px) {
     flex-wrap: wrap;
     justify-content: center;
@@ -34,9 +35,21 @@
   @media (max-width: $md3+px) {
     flex-basis: 100%;
   }
-
   .section-top__icon {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
+  }
+
+}
+
+.invite {
+  .section-top__icon {
+    transform: translateY(-3px);
+  }
+}
+
+.main-aside__gallery {
+  .section-title {
+    margin: 0;
   }
 }
 

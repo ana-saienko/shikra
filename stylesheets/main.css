@@ -140,6 +140,7 @@ html {
   position: absolute;
   left: 0;
   top: 0;
+  bottom: 0;
   z-index: 23;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
@@ -405,6 +406,7 @@ html {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 38px;
+  padding-bottom: 50px;
 }
 
 @media (max-width: 1125px) {
@@ -461,8 +463,17 @@ html {
 }
 
 .members .section-top__icon {
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.invite .section-top__icon {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.main-aside__gallery .section-title {
+  margin: 0;
 }
 
 .main-board__middle,
